@@ -1,0 +1,80 @@
+:root {
+  --background-body: #2f3239;
+  --background-dark: #383c45;
+  --primary-color: #1ab1dd;
+  --secondary-color: #f1cd52;
+  --accent-color-1: #1fcfb7;
+  --accent-color-2: #11f09b;
+  --text-light: #ffffff;
+  --text-dark: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-light);
+  background: linear-gradient(to bottom right, var(--background-dark), var(--background-body), var(--primary-color));
+  background-attachment: fixed;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 16px rgba(26, 177, 221, 0.6);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+h1, h3, h4 {
+  color: var(--secondary-color);
+}
+
+ul li::marker {
+  color: var(--accent-color-1);
+}
+
+a.cta {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+a.cta:hover {
+  background-color: var(--accent-color-1);
+  transform: scale(1.05);
+  color: var(--text-dark);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
