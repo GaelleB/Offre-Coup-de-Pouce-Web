@@ -34,7 +34,6 @@ body {
 
 .logo-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 16px rgba(26, 177, 221, 0.6);
 }
 
 .container {
